@@ -64,7 +64,7 @@ return (
             ) : (
               <button
                 className="rounded-full bg-secondary-500 p-2"
-                onClick={() => setIsMenuToggled(!isMenuToggled)}
+                onClick={() => setIsMenuToggled(!isMenuToggle)}
               >
                 <Bars3Icon className="h-6 w-6 text-white" />
               </button>
@@ -74,11 +74,11 @@ return (
       </div>
 
       {/* MOBILE MENU MODAL */}
-      {!isAboveMediumScreens && isMenuToggled && (
+      {!isAboveMediumScreens && isMenuToggle && (
         <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
-            <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+            <button onClick={() => setIsMenuToggled(!isMenuToggle)}>
               <XMarkIcon className="h-6 w-6 text-gray-400" />
             </button>
           </div>
