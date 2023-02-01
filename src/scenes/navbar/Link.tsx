@@ -5,12 +5,12 @@ import { SelectedPage } from '@/shared/types';
 // @this is the props
 type Props = {
     page:string;
-    SelectedPage:SelectedPage;
+    selectedPage:SelectedPage;
     setSelectedPage: (value:SelectedPage) => void;
 }
 
 
-const Link = ({ page,SelectedPage,setSelectedPage }:Props) =>{
+const Link = ({ page,selectedPage,setSelectedPage }:Props) =>{
     const lowerCasePage = page.toLocaleLowerCase().replace(/ /g, "") as SelectedPage
 
     return (
