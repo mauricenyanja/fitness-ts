@@ -109,5 +109,9 @@ return (
         </div>
       )}
     </nav>
-  );
-};
+  )
+}
+
+export default Navbar
+
+

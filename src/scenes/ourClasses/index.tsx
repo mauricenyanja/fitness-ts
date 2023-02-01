@@ -91,3 +91,5 @@ const OurClasses = ({ setSelectedPage }:Props) =>{
       </section>
     )
 }
+
+export default OurClasses
