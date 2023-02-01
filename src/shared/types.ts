@@ -1,5 +1,3 @@
-import { Interface } from "readline";
-
 export enum SelectedPage {
     Home = "home",
     Benefits = "benefits",
